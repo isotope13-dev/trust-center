@@ -2,9 +2,9 @@
 
 We don't want your data. We only store what's necessary to make the service work:
 
-* GitHub username
+* OAuth Identity
 * IP address
-* Pull request metadata
+* Uploads, if provided
 
 We never sell your data or share it with third parties (except essential service providers like our hosting). You can request to delete your data anytime.
 
