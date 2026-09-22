@@ -6,44 +6,44 @@ Don't be a jerk. Don't break the law.
 
 ### Access Control
 
-You get access if you need it, and nothing more. We review this regularly. Authentication requires a physical security key—no exceptions.
+You get the access you need and nothing more, reviewed regularly. Authentication requires a physical security key—no exceptions.
 
 ### Artificial Intelligence
 
-We use AI, but we do not allow models to be trained on your data.
+We use AI. We do not let models train on your data.
 
 ### Business Continuity & Backups
 
-Our production API endpoints operate independently from 4 geographic regions of the United States. We backup all critical data.
+Our production API endpoints run independently in 4 US regions. We back up all critical data.
 
 ### Change Management
 
-Every production change is documented. All code and config changes are reviewed before going live. Dev stays separate from production.
+Every production change is documented, and every code and config change is reviewed before going live. Dev stays separate from production.
 
 ### Compliance
 
-We're working towards SOC 2 and GDPR compliance with annual third-party audits. Issues get tracked and fixed on schedule.
+We are working towards SOC 2 and GDPR compliance with annual third-party audits. Findings are tracked and fixed on schedule.
 
 ### Data Lifecycle
 
-Everything's encrypted at rest and in transit. We store no customer data.
+We store no customer data. What we do hold is encrypted at rest and in transit.
 
 ### Incident Response
 
-Something breaks? We fix it fast and will notify customers within 24 hours if it's critical. Same deal for security incidents.
+Something breaks, we fix it fast. Critical incidents, security or otherwise, reach affected customers within 24 hours.
 
 ### Physical Assets
 
-We track every device. Full disk encryption on everything. When retiring devices, we destroy all data using NIST SP 800-88 compliant techniques.
+Every device is tracked and fully encrypted. Retired devices are destroyed using NIST SP 800-88 techniques.
 
 ### Risk Management
 
-We conduct yearly risk assessments to spot threats and build long-term mitigation plans.
+We assess risk yearly to spot threats and plan long-term mitigations.
 
 ### Security Operations
 
-We avoid maintaining our own operating system stack, but when we must - we keep our environments patched, firewalled, and monitored. Critical patches are applied within 8 hours.
+We avoid running our own operating system stack. Where we must, environments stay patched, firewalled, and monitored, with critical patches applied within 8 hours.
 
 ### Vendor
 
-We avoid 3rd-party vendors when possible. The ones we use face rigorous yearly security reviews. See ../SUBPROCESSORS.md for our current list of subprocessors.
+We avoid third-party vendors where possible. The ones we use face a yearly security review. See [Approved Subprocessors](../SUBPROCESSORS.md).

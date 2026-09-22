@@ -1,8 +1,8 @@
 # Terms of Service
 
-* Use our tools as intended—no spamming or illegal stuff
-* Security researchers: hack away! See our [Vulnerability Reporting Policy](policies/VULN-REPORTING.md) for guidelines
-* We provide the service as-is with no guarantees
-* You can cancel anytime, and we can suspend you if you break these rules
+* Use our tools as intended—no spam, nothing illegal
+* Security researchers: hack away, under our [Vulnerability Reporting Policy](policies/VULN-REPORTING.md)
+* The service is provided as-is, with no guarantees
+* You can cancel anytime; we can suspend you for breaking these rules
 
-Questions? Reach us at tos(@)isotope13.io
+Questions? tos(@)isotope13.io

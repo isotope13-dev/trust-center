@@ -1,11 +1,11 @@
-### Privacy Policy
+# Privacy Policy
 
-We don't want your data. We only store what's necessary to make the service work:
+We don't want your data. We store only what the service needs:
 
-* OAuth Identity
+* OAuth identity
 * IP address
 * Uploads, if provided
 
-We never sell your data or share it with third parties (except essential service providers like our hosting). You can request to delete your data anytime.
+We never sell your data, and never share it beyond the service providers in [Approved Subprocessors](../SUBPROCESSORS.md). Ask us and we delete it.
 
-Questions? Reach us at privacy(@)isotope13.io
+Questions? privacy(@)isotope13.io

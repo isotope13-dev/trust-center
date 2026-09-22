@@ -1,9 +1,6 @@
 # Approved Subprocessors
 
-- Cloudflare, Inc: Hosting
-- GitHub, Inc: Source Code, OAuth Login Provider (optional)
-- Google, Inc: OAuth Login Provider (optional)
-- Stripe, Inc: Payments
-
-That's it.
-
+* Cloudflare, Inc: Hosting
+* GitHub, Inc: Source code, optional OAuth login
+* Google, Inc: Optional OAuth login
+* Stripe, Inc: Payments
