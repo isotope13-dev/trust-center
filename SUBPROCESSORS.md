@@ -1,7 +1,7 @@
 # Approved Subprocessors
 
 * Cloudflare, Inc: Hosting
-* GitHub, Inc: Source code, optional OAuth login
+* GitHub, Inc: Optional OAuth login
 * Google, Inc: Optional OAuth login
 * Hetzner Online GmbH: Artifact analysis
 * InterServer, Inc: Artifact analysis
