@@ -8,4 +8,4 @@
 * IONOS SE: VM Hosting (Artifact Analysis)
 * Stripe, Inc: Payments
 
-We notify customers before adding one.
+We notify customers 30 days before adding one.

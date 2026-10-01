@@ -13,7 +13,7 @@ Verdicts are shared: anyone asking about the same artifact gets the same answer.
 
 Uploads are public, like VirusTotal: anyone may download them, we share them with the security community, and we may train on them. Don't upload anything you can't share. Private uploads are coming soon.
 
-We never sell your data, never name you as a customer without written permission, and never share it beyond our [Approved Subprocessors](../SUBPROCESSORS.md). It is processed in the US under the EU–US Data Privacy Framework and kept as listed in [Data Lifecycle](CORPORATE.md#data-lifecycle). We sign DPAs on request.
+We never sell your data, never name you as a customer without written permission, and never share it beyond our [Approved Subprocessors](../SUBPROCESSORS.md). It is processed in the US under the EU–US Data Privacy Framework and kept as listed in [Data Lifecycle](CORPORATE.md#data-lifecycle). We sign our [DPA](DPA.md) on request.
 
 You may access, correct, export, or delete your data, or object to its use. Uploads stay public. You may also complain to your data protection authority.
 
