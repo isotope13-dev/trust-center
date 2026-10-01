@@ -6,11 +6,11 @@ Don't be a jerk. Don't break the law.
 
 ### Access Control
 
-You get the access you need and nothing more, reviewed regularly. Authentication requires a physical security key—no exceptions.
+You get the access you need and nothing more, reviewed regularly and revoked the day you leave. Authentication requires a physical security key—no exceptions.
 
 ### Artificial Intelligence
 
-We use AI. We do not let models train on your data.
+We use AI. Models never train on your account or requests. Uploads are public and may be used for training.
 
 ### Business Continuity & Backups
 
@@ -22,15 +22,23 @@ Every production change is documented, and every code and config change is revie
 
 ### Compliance
 
-We are working towards SOC 2 and GDPR compliance with annual third-party audits. Findings are tracked and fixed on schedule.
+Our security program follows the SOC 2 Trust Services Criteria. We are working towards SOC 2 Type II and GDPR compliance with annual third-party audits. Findings are tracked and fixed on schedule.
 
 ### Data Lifecycle
 
-We store no customer data. What we do hold is encrypted at rest and in transit.
+Everything is encrypted at rest and in transit.
+
+| Data | Shared | Kept |
+| --- | --- | --- |
+| Account: OAuth identity, org, tokens | No | Until you leave, then deleted within 30 days |
+| Request logs: IP address, packages, URLs, hashes | No | 7 days |
+| Usage metrics, per org | No | 90 days |
+| Verdicts | Yes, with anyone asking about the same artifact | Indefinitely |
+| Uploads | Yes, publicly downloadable | Indefinitely, even after you leave |
 
 ### Incident Response
 
-Something breaks, we fix it fast. Critical incidents, security or otherwise, reach affected customers within 24 hours.
+Something breaks, we fix it fast. Critical incidents reach affected customers within 24 hours of discovery. That includes any unauthorized access to, loss, or disclosure of customer data, followed by a written report.
 
 ### Physical Assets
 

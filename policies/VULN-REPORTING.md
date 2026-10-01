@@ -1,6 +1,6 @@
 # Vulnerability Reporting Policy
 
-We welcome security research and report our findings in public.
+We welcome security research and report our findings in public, minus anything that identifies a customer.
 
 ## Scope
 
