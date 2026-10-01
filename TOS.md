@@ -11,4 +11,4 @@
 * We can suspend you for breaking these rules or endangering the service
 * A signed agreement with us overrides these terms
 
-Questions? tos(@)isotope13.io
+Questions? trust(@)isotope13.io

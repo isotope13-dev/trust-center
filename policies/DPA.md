@@ -25,10 +25,10 @@ This DPA covers personal data isotope13 LLC ("we") processes on behalf of a cust
 
 ## Transfers
 
-We process data in the US under the EU–US Data Privacy Framework. Where it doesn't apply, the EU Standard Contractual Clauses (Module 2) are incorporated by reference, with the UK Addendum and Swiss amendments as needed: general subprocessor authorization with 30 days' notice, Irish law and courts. Their annexes are the Scope above, our Corporate Policies, and our Approved Subprocessors.
+We process data in the US. Transfers from the EEA use the EU Standard Contractual Clauses (Module 2), incorporated by reference, with the UK Addendum and Swiss amendments as needed: general subprocessor authorization with 30 days' notice, Irish law and courts. Their annexes are the Scope above, our Corporate Policies, and our Approved Subprocessors.
 
 ## Liability
 
 As limited by your agreement.
 
-Questions? privacy(@)isotope13.io
+Questions? trust(@)isotope13.io
