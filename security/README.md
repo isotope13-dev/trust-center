@@ -8,15 +8,15 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 **1.2 Standards.** We follow the SOC 2 Trust Services Criteria.
 
-**1.3 People.** Everyone signs these measures, is background-checked, and is security-trained before getting access. Training repeats yearly.
+**1.3 People.** Everyone signs these measures, is background-checked, and is security-trained before getting access; engineers also train in secure coding. Training repeats yearly.
 
-**1.4 Acceptable Use.** Use company systems and data only for work, keep customer data on approved systems, report suspected incidents at once, and obey the law. Violations end access.
+**1.4 Acceptable Use.** Use company systems and data only for work, keep customer data in production—never on laptops or phones—report suspected incidents at once, and obey the law. Violations end access.
 
 ## 2. Access
 
 **2.1 Least Privilege.** Staff get the access they need and nothing more, approved by our CEO.
 
-**2.2 Strong Authentication.** Production access requires a physical security key—no exceptions. No credentials are shared.
+**2.2 Strong Authentication.** Production and corporate access require a physical security key—no exceptions. No credentials are shared.
 
 **2.3 Access Reviews.** Access and admin activity are reviewed quarterly. Access is revoked the day someone leaves.
 
@@ -24,7 +24,9 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 **2.5 API Tokens.** Tied to organization, not per-user. Revocation within 60 seconds.
 
-**2.6 Physical Security.** Our hosted regions run in our subprocessors' data centers, whose audited physical security we rely on. Our on-prem region, with our public dataset, sits in a locked, alarmed room and holds no customer data. Every device is tracked, screen-locked, and encrypted if it holds non-public data.
+**2.6 Physical Security.** Our hosted regions run in our subprocessors' data centers, whose audited physical security we rely on. Our on-prem region, with our public dataset, sits in a locked, alarmed room and holds no customer data. Every device is tracked and screen-locked.
+
+**2.7 Workstations.** Workstations run macOS with automatic security updates, XProtect, and [Atomdrift Scan](https://atomdrift.org/); unlock with Touch ID or a password of at least 15 characters, per NIST SP 800-63B; lock after 5 minutes idle; and are fully disk-encrypted.
 
 ## 3. Data Protection
 
@@ -46,13 +48,13 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 **4.3 Isolation.** Artifact analysis runs in disposable VMs with no path to production or customer data.
 
-**4.4 Monitoring and Logging.** Automated alerts watch production around the clock and page our CEO, who is always on call. Request logs are kept 7 days in Cloudflare, where they can't be edited. Admin and audit logs—Cloudflare account activity, production access, and deploys—are kept 1 year.
+**4.4 Monitoring and Logging.** Automated alerts watch production and corporate systems around the clock and page our CEO, who is always on call. Request logs are kept 7 days in Cloudflare, where they can't be edited. Admin and audit logs—Cloudflare account activity, production access, and deploys—are kept 1 year.
 
 ## 5. Application Security
 
-**5.1 Secure Development.** We build against the OWASP Top 10. Every change is documented and passes automated tests; risky changes also get AI review. Only approved, merged code reaches production; deploys refuse anything else.
+**5.1 Secure Development.** We build against the OWASP Top 10. Every change is documented and passes automated tests and static analysis (SAST); risky changes also get AI review. Only approved, merged code reaches production, through scripted, repeatable deploys that refuse anything else.
 
-**5.2 Separation of Environments.** Development stays separate from production.
+**5.2 Separation of Environments.** Development and corporate systems stay separate from production.
 
 **5.3 Vulnerability Reporting.** Researchers may test us under our [Vulnerability Disclosure Policy](VULN-DISCLOSURE.md).
 
@@ -64,7 +66,7 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 ## 7. Vulnerability Management
 
-**7.1 Scanning and Patching.** Hosts patch automatically and dependencies are scanned continuously. Vulnerabilities with an upstream fix are patched within 72 hours if critical, a week if high, and 90 days if medium.
+**7.1 Scanning and Patching.** Hosts patch automatically and dependencies are scanned continuously. Vulnerabilities, however found, are fixed within 72 hours if critical, a week if high, and 90 days if medium. Where no fix exists, we mitigate or take the affected component offline within the same window.
 
 **7.2 Penetration Testing.** An independent firm tests us yearly.
 
