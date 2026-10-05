@@ -10,7 +10,7 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 **1.3 People.** Everyone signs these measures, is background-checked, and is security-trained before getting access. Training repeats yearly.
 
-**1.4 Acceptable Use.** Don't be a jerk. Use company systems and data only for work, keep customer data on approved systems, report suspected incidents at once, and obey the law. Violations end access.
+**1.4 Acceptable Use.** Use company systems and data only for work, keep customer data on approved systems, report suspected incidents at once, and obey the law. Violations end access.
 
 ## 2. Access
 
