@@ -6,7 +6,7 @@ Nothing that identifies a user reaches our servers. It leaves Cloudflare only fo
 
 ## Components
 
-**Cloudflare** is the only way in.
+**Cloudflare Workers:**
 
 - `dash.isotope13.ai`: customer accounts. GitHub or Google sign-in; mints API tokens.
 - `api.isotope13.ai`: is this PURL, URL, hash, or file hostile? A bearer token resolves to an org for quota.
@@ -19,7 +19,7 @@ Nothing that identifies a user reaches our servers. It leaves Cloudflare only fo
 
 **Scan servers** run in four US colos.
 
-**Verdict master** stores artifacts on disk and verdicts in PostgreSQL. Scan servers fail over to a replica.
+**Verdict master** stores artifacts on disk and verdicts in PostgreSQL, with a replica.
 
 **vLLM** grades borderline results from the scanner's evidence, never the file or the caller. OpenRouter is the fallback.
 
@@ -28,12 +28,10 @@ Nothing that identifies a user reaches our servers. It leaves Cloudflare only fo
 | Data | Personal? | Where it goes |
 | --- | --- | --- |
 | IP address, user agent | Yes | Cloudflare edge only; never logged |
-| OAuth account ID, username or email | Yes | dash and its KV; GitHub or Google |
+| OAuth subject identifier, username or email | Yes | dash and its KV; the sign-in provider |
 | Name, email, address, card | Yes | Stripe |
 | Org ID, request counts | No | Quota tracker |
 | PURLs, URLs, hashes, files, verdicts | Rarely, inside a file; public | Caches, scan servers, verdict store |
-
-Retention: [Privacy Policy](../policies/PRIVACY.md).
 
 ## Trust boundaries
 

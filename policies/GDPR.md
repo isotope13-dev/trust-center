@@ -2,7 +2,7 @@
 
 isotope13 LLC is a US company with no EU establishment.
 
-We are a **processor** for our customers' API requests, under our [DPA](DPA.md). We are a **controller** for everything else, under our [Privacy Policy](PRIVACY.md): accounts, billing, uploads, verdicts, correspondence, and API requests made without a customer token.
+We are a **processor** for our customers' accounts and API requests, under our [DPA](DPA.md). We are a **controller** for everything else, under our [Privacy Policy](PRIVACY.md): billing, uploads, verdicts, correspondence, and API requests made without a customer token.
 
 | Requirement | Where |
 | --- | --- |

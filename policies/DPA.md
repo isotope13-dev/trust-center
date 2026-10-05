@@ -6,15 +6,15 @@ This DPA covers personal data isotope13 LLC ("we") processes on behalf of a cust
 
 * **Exporter:** you, as controller, or as processor for your own customers
 * **Importer:** isotope13 LLC, 109 Amber Ct, Carrboro, NC 27510, USA, as processor or subprocessor. Contact: Thomas Stromberg, CEO, trust(@)isotope13.io
-* **Subject and purpose:** answering your API requests
+* **Subject and purpose:** signing in your team and answering your API requests
 * **Duration:** your agreement's term, plus deletion below
 * **Frequency:** continuous
-* **Whose:** people and systems that call our API for you
-* **Data:** IP addresses, never logged or passed on
+* **Whose:** your team members, and anyone who calls our API for you
+* **Data:** OAuth subject identifier and username or email; IP address and user agent, never logged or passed on
 * **Sensitive data:** none
 * **Retention:** as in our [Privacy Policy](PRIVACY.md)
 * **Supervisory authority:** the exporter's, under Clause 13 of the Standard Contractual Clauses
-* **Not covered:** your team's accounts, billing, uploads, and verdicts. We control them under our [Privacy Policy](PRIVACY.md). Uploads and verdicts are public, so don't upload personal data.
+* **Not covered:** billing, uploads, and verdicts. We control them under our [Privacy Policy](PRIVACY.md). Uploads and verdicts are public, so don't upload personal data.
 
 ## Our Commitments
 
@@ -22,7 +22,7 @@ This DPA covers personal data isotope13 LLC ("we") processes on behalf of a cust
 * Everyone with access is bound to confidentiality.
 * Security follows our [Security Measures](SECURITY-MEASURES.md).
 * You authorize our [Approved Subprocessors](../SUBPROCESSORS.md). We notify you 30 days before adding one. Object, and if we can't resolve it, you may terminate for a refund of prepaid fees. Our subprocessors are bound to equivalent terms, and we remain liable for them.
-* We notify you of a breach, as our [Incident Response Plan](INCIDENT-RESPONSE.md) defines it, within 24 hours of discovery, and help with your obligations.
+* We notify you of a breach, as our [Incident Response Plan](INCIDENT-RESPONSE.md) defines it, within 48 hours of discovery, and help with your obligations.
 * We help with data subject requests, impact assessments, and regulator consultations.
 * We tell you about any government request for your data, unless the law forbids it.
 * Under the CCPA, we are your service provider: we won't sell or share your personal data, or use it outside our agreement.
@@ -36,5 +36,3 @@ We process data in the US, after the nearest Cloudflare edge cache handles each 
 ## Liability
 
 As limited by your agreement.
-
-Questions? trust(@)isotope13.io

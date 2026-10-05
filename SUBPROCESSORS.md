@@ -1,6 +1,6 @@
 # Approved Subprocessors
 
-These companies process personal data for us, all of it in the US after Cloudflare's nearest edge first handles each request. This list is Annex III of our [DPA](policies/DPA.md).
+These companies process personal data for us, all of it in the US after Cloudflare's nearest edge first handles each request. This list is Annex III of any data processing agreement we sign, including our own [DPA](policies/DPA.md).
 
 | Subprocessor | Address | Purpose | Personal data |
 | --- | --- | --- | --- |
@@ -11,6 +11,6 @@ These companies process personal data for us, all of it in the US after Cloudfla
 | IONOS SE | Elgendorfer Str. 57, 56410 Montabaur, Germany | VM hosting (artifact analysis) | Uploads |
 | Stripe, Inc. | 354 Oyster Point Blvd, South San Francisco, CA 94080, USA | Payments | Billing name, email, address, and card |
 
-GitHub and Google sign your team in on your behalf, so they aren't our subprocessors.
+Sign-in providers, such as GitHub and Google, sign your team in on your behalf, so they aren't our subprocessors.
 
 We notify customers 30 days before adding one.

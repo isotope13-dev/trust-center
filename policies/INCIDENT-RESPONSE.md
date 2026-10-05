@@ -13,7 +13,7 @@ Our CEO leads every incident. Anyone can report one through our [security.txt](h
 
 A breach is any unauthorized access to, or loss, change, or disclosure of, customer data, or any compromise of production.
 
-* **Customers:** within 24 hours of discovering a breach
+* **Customers:** within 48 hours of discovering a breach
 * **Regulators:** as the law requires—within 72 hours under GDPR
 * **Affected people:** without undue delay, when the risk to them is high
 * **The public:** our review, minus anything that identifies a customer
