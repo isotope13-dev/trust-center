@@ -22,7 +22,7 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 **2.4 Customer Sessions.** Sessions end 48 hours after sign-in, and every action rechecks membership.
 
-**2.5 API Tokens.** Tokens carry 130 random bits, at most four per org. Revocation takes effect within 60 seconds.
+**2.5 API Tokens.** Tied to organization, not per-user. Revocation within 60 seconds.
 
 **2.6 Physical Security.** Our hosted regions run in our subprocessors' data centers, whose audited physical security we rely on. Our on-prem region, with our public dataset, sits in a locked, alarmed room and holds no customer data. Every device is tracked, screen-locked, and encrypted if it holds non-public data.
 
