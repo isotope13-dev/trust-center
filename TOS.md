@@ -7,6 +7,7 @@
 * Uploads are public—don't upload anything you can't share. See [Privacy Policy](policies/PRIVACY.md)
 * Security researchers: hack away, under our [Vulnerability Reporting Policy](policies/VULN-REPORTING.md)
 * The service is as-is, no guarantees
+* Our liability is capped at what you paid us in the last 12 months
 * You can cancel anytime
 * We can suspend you for breaking these rules or endangering the service
 * A signed agreement with us overrides these terms
