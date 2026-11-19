@@ -1,6 +1,6 @@
 # Incident Response Plan
 
-Our CEO leads every incident and is always on call. Anyone can report one through our [security.txt](https://isotope13.io/.well-known/security.txt).
+Staff report suspected incidents at once to our CEO, who leads every incident and is always on call. Anyone else can use our [security.txt](https://isotope13.io/.well-known/security.txt).
 
 ## Steps
 

@@ -14,11 +14,11 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 ## 2. Access
 
-**2.1 Least Privilege.** Staff get the access they need and nothing more, approved by our CEO.
+**2.1 Least Privilege.** Staff get only the access needed to operate and support the service, approved by our CEO.
 
 **2.2 Strong Authentication.** Production and corporate access require a physical security key—no exceptions. No credentials are shared.
 
-**2.3 Access Reviews.** Access and admin activity are reviewed quarterly. Access is revoked the day someone leaves.
+**2.3 Access Reviews.** Our CEO reviews access and admin activity quarterly and revokes access the day someone leaves.
 
 **2.4 Customer Sessions.** Sessions end 48 hours after sign-in, and every action rechecks membership.
 
