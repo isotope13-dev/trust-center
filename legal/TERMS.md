@@ -2,8 +2,9 @@
 
 * Use our tools as intended—no spam, nothing illegal
 * Your tier sets your rights to our commercial rule-set:
-  - Business: your own workloads + two-business-day support
-  - Critical: customer workloads, including redistribution + next-business-day support
+  - Basic: your own workloads + one-week support response
+  - Enhanced: customer workloads + three-day support response
+  - Critical: customer workloads, including redistribution + next-day support response
 * Uploads are public—don't upload anything you can't share. See [Privacy Policy](../privacy/README.md)
 * Security researchers: hack away, under our [Vulnerability Disclosure Policy](../security/VULN-DISCLOSURE.md)
 * The service is as-is, no guarantees
