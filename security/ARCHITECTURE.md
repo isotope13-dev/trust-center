@@ -6,7 +6,7 @@ Nothing that identifies a user reaches our servers. It leaves Cloudflare only fo
 
 ## Scope
 
-We tell customers whether a package, URL, file, or hash is hostile. Our commitments are in our [Terms](../legal/TERMS.md), [Security Measures](README.md), and [DPA](../legal/DPA.md).
+We tell customers whether a package, URL, file, or hash is hostile. Our commitments are in our [Terms](../legal/TERMS.md), [SLA](../legal/SLA.md), [Security Measures](README.md), and [DPA](../legal/DPA.md).
 
 Everything below is in scope. Our marketing website and the collectors that feed our dataset are not.
 
