@@ -12,15 +12,17 @@ Everything below is in scope. Our marketing website and the collectors that feed
 
 ## Components
 
+Each `atomdrift.com` host is a commercial alias of its `atomdrift.org` counterpart.
+
 **Cloudflare Workers:**
 
-- `dash.isotope13.ai`: customer accounts. OAuth sign-in; mints API tokens.
-- `api.isotope13.ai`: is this PURL, URL, hash, or file hostile? A bearer token resolves to an org for quota.
-- `updates.isotope13.ai`: detection rule updates. A bearer token picks the customer's channel.
+- `console.atomdrift.com`: customer accounts. OAuth sign-in; mints API tokens.
+- `api.atomdrift.com`: is this PURL, URL, hash, or file hostile? A bearer token resolves to an org for quota.
+- `updates.atomdrift.org`: detection rule updates. A bearer token picks the customer's channel.
 
 **Cloudflare storage:**
 
-- OID→Org mapper (Workers KV): OAuth subject identifiers, orgs, tokens. Only dash reads identities.
+- OID→Org mapper (Workers KV): OAuth subject identifiers, orgs, tokens. Only console reads identities.
 - Quota tracker (Analytics Engine): request counts per org.
 - Edge cache (Workers Cache) and global cache (Workers KV): verdicts.
 - Rules bucket (R2): detection rules.
@@ -33,17 +35,21 @@ Everything below is in scope. Our marketing website and the collectors that feed
 
 ## Data
 
+Everything we hold. Uploads and verdicts are public; the rest is customer data.
+
 | Data | Personal? | Where it goes |
 | --- | --- | --- |
 | IP address, user agent | Yes | Cloudflare edge only; never logged |
-| OAuth subject identifier, username or email | Yes | dash and its KV; the sign-in provider |
+| OAuth subject identifier, username or email | Yes | console and its KV; the sign-in provider |
 | Name, email, address, card | Yes | Stripe |
+| API tokens | No | OID→Org mapper |
 | Org ID, request counts | No | Quota tracker |
+| Request logs | No | Cloudflare, 7 days |
 | PURLs, URLs, hashes, files, verdicts | Rarely, inside a file; public | Caches, scan servers, verdict store |
 
 ## Trust boundaries
 
-1. Internet → Cloudflare: TLS; OAuth for dash, bearer token for the API.
+1. Internet → Cloudflare: TLS; OAuth for console, bearer token for the API.
 2. Cloudflare → colos, and colo → colo: Cloudflare Tunnel public hostnames, bearer token. No inbound ports.
 3. Colos → OpenRouter: TLS, API key.
 

@@ -32,11 +32,11 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 ## 3. Data Protection
 
-**3.1 Classification.** Uploads and verdicts are public; everything else is customer data.
+**3.1 Classification.** Uploads and verdicts are public; everything else is customer data, as our [architecture](ARCHITECTURE.md#data) lists.
 
 **3.2 Minimisation.** IP addresses and user agents stop at Cloudflare's edge, unlogged. Scan servers see only the artifact asked about, and LLMs only excerpts of the scanner's evidence—never the file or who asked.
 
-**3.3 Encryption.** Every connection uses TLS, authenticated as our [trust boundaries](ARCHITECTURE.md#trust-boundaries) describe. Cloudflare accepts only TLS 1.2 or newer, with FIPS-compliant cipher suites. Customer data lives in Workers KV, [encrypted at rest](https://developers.cloudflare.com/kv/reference/data-security/) with AES-256-GCM.
+**3.3 Encryption.** Every connection uses TLS, authenticated as our [trust boundaries](ARCHITECTURE.md#trust-boundaries) describe. Our websites and downloads are HTTPS-only, with HSTS. Cloudflare accepts only TLS 1.2 or newer, with FIPS-compliant cipher suites. Customer data lives in Workers KV, [encrypted at rest](https://developers.cloudflare.com/kv/reference/data-security/) with AES-256-GCM.
 
 **3.4 Keys and Secrets.** We hold no encryption keys for customer data; Cloudflare manages them. Our secrets never live in code, and rotate at least every 180 days and at once on suspected exposure.
 
@@ -68,7 +68,7 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 ## 7. Vulnerability Management
 
-**7.1 Scanning and Patching.** Hosts patch automatically and dependencies are scanned continuously. Vulnerabilities, however found, are fixed within 72 hours if critical, a week if high, and 90 days if medium. Where no fix exists, we mitigate or take the affected component offline within the same window.
+**7.1 Scanning and Patching.** Hosts patch automatically. We inventory every host's dependencies and binaries, and scan them continuously. Vulnerabilities, however found, are fixed within 72 hours if critical, a week if high, and 90 days if medium. Where no fix exists, we mitigate or take the affected component offline within the same window.
 
 **7.2 Penetration Testing.** Outside testers assess us at least yearly. We publish every report in full within 90 days of receiving it, minus anything that identifies a customer. See our [Penetration Tests](../pentests/README.md).
 
@@ -76,7 +76,7 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 ## 8. Continuity
 
-**8.1 Recovery.** Our [Continuity Plan](CONTINUITY.md) sets how we recover each component. We back up all critical data and test restores yearly. Customer data backups stay within Cloudflare. RPO is 1 day; RTO is 7 days.
+**8.1 Recovery.** Our [Continuity Plan](CONTINUITY.md) sets how we recover each component. Customer data is backed up daily within Cloudflare, verdicts replicate to a standby, and our dataset is snapshotted with ZFS and copied to R2. We test restores yearly. RPO is 1 day; RTO is 7 days.
 
 **8.2 Redundancy.** Analysis runs independently in four US regions: three hosting providers and one on-prem. Cached verdicts are served from Cloudflare even when every backend is down. Cloudflare is our only critical provider: if it is down, so are we.
 

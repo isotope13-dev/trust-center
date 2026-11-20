@@ -4,7 +4,7 @@ We welcome security research and report our findings in public, minus anything t
 
 ## Scope
 
-* Hosts within `*.isotope13.(io|dev|ai|net)` and `*.atomdrift.(com|net)`
+* Hosts within `*.isotope13.(io|dev|ai|net)` and `*.atomdrift.(com|net|org)`
 * **Out of scope:** issues customers wouldn't care about—spam, local clickjacking, weak SSL ciphers
 * **Not allowed:** denial of service, social engineering
 

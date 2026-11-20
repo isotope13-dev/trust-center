@@ -9,6 +9,12 @@ Staff report suspected incidents at once to our CEO, who leads every incident an
 3. **Recover:** fix the cause, restore from backup if needed, and confirm it's gone
 4. **Review:** within two weeks, write up what happened and what we changed
 
+## Common Incidents
+
+* **Denial of service:** Cloudflare absorbs it; we block the source and tighten rate limits
+* **Ransomware:** isolate affected hosts, rebuild them from our deploy scripts, and restore data from backup
+* **Data breach:** revoke exposed credentials, find what was accessed, and notify as below
+
 ## Notification
 
 A breach is any unauthorized access to, or loss, change, or disclosure of, customer data, or any compromise of production.
