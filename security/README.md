@@ -72,6 +72,8 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 **7.2 Penetration Testing.** Outside testers assess us at least yearly. We publish every report in full within 90 days of receiving it, minus anything that identifies a customer. See our [Penetration Tests](../pentests/README.md).
 
+**7.3 Assessment Tools and Data.** Our CEO approves assessment tools and their scope. Only authorized testers can access raw evidence, and we delete it when verification is complete.
+
 ## 8. Continuity
 
 **8.1 Recovery.** Our [Continuity Plan](CONTINUITY.md) sets how we recover each component. We back up all critical data and test restores yearly. Customer data backups stay within Cloudflare. RPO is 1 day; RTO is 7 days.
