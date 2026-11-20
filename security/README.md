@@ -70,7 +70,7 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 **7.1 Scanning and Patching.** Hosts patch automatically and dependencies are scanned continuously. Vulnerabilities, however found, are fixed within 72 hours if critical, a week if high, and 90 days if medium. Where no fix exists, we mitigate or take the affected component offline within the same window.
 
-**7.2 Penetration Testing.** An independent firm tests us yearly.
+**7.2 Penetration Testing.** Outside testers assess us at least yearly. We publish every report in full within 90 days of receiving it, minus anything that identifies a customer. See our [Penetration Tests](../pentests/README.md).
 
 ## 8. Continuity
 
@@ -88,4 +88,4 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 **10.1 Independent Audits.** We will complete a SOC 2 Type II audit by September 21, 2027, then audit yearly. Findings are tracked and fixed on schedule.
 
-**10.2 Reports.** We share our SOC 2 report, once available, and our penetration test summary on request.
+**10.2 Reports.** We share our SOC 2 report, once available, on request. Penetration test reports are public (see 7.2).
