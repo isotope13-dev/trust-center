@@ -5,7 +5,7 @@ Staff report suspected incidents at once to our CEO, who leads every incident an
 ## Steps
 
 1. **Triage:** confirm it, decide if it's a breach, and start a dated log
-2. **Contain:** preserve logs, then revoke credentials, block access, or take the affected service offline
+2. **Contain:** preserve logs, revoke credentials, block access
 3. **Recover:** fix the cause, restore from backup if needed, and confirm it's gone
 4. **Review:** within two weeks, write up what happened and what we changed
 
