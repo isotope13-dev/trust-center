@@ -28,6 +28,8 @@ These are our technical and organisational measures, and Annex II of any data pr
 
 **2.7 Workstations.** Workstations run macOS with automatic security updates, XProtect, and [Atomdrift Scan](https://atomdrift.org/); unlock with Touch ID or a password of at least 15 characters, per NIST SP 800-63B; lock after 5 minutes idle; and are fully disk-encrypted.
 
+**2.8 Phones.** Phones get alerts and messages, never production data. They update automatically, are encrypted, and unlock with biometrics or a passcode of at least 4 digits.
+
 ## 3. Data Protection
 
 **3.1 Classification.** Uploads and verdicts are public; everything else is customer data.
